@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let fin = 'listo'
+while(fin == 'listo'){
+    let figura = prompt('(triangulo, rectangulo, circulo) elija una opcion para calcular: ')
+    if (figura == 'triangulo'){
+        let base = prompt('dame la base: ')
+        let altura = prompt('dame la altura: ')
+        let respuesta = prompt(`el area del triangulo es de ${(base*altura)/2} m2?(si o no): `)
+    }
+    if(figura == 'rectangulo'){
+        let base = prompt('dame la base: ')
+        let altura = prompt('dame la altura: ')
+        let respuesta = prompt(`el area del rectangulo es de ${base*altura} m2?(si o no): `)
+    }
+    if(figura == 'circulo'){
+        let radio = prompt(`dame el radio del circulo: `)
+        let respuesta = prompt(`el area del circulo es de ${3.14*radio*radio} m2?(si o no): `)
+    }
+    else{
+        let respuesta = prompt(`opcion no valida (si o no): `)
+    }
+
+}
+
+    </script>
+</body>
+</html>

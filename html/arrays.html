@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrays
+
+let numero = []
+
+let numeros = [1,2,3,4,5]
+
+let palabras =['hola', 'estamos', 'en', 'youtube']
+
+console.log(numero);
+
+console.log(numeros);
+
+
+console.log(numeros[0]);
+
+console.log(numeros[0]+numeros[1]);
+
+console.log(palabras[0]+palabras[3]);
+
+console.log(`palabras de ${palabras[3]} tiene ${palabras[3].length} letras`);
+
+console.log(numeros.length);
+
+let number = 4;
+console.log(Array.isArray(number)); //comprobrar si es un array
+
+console.log(numeros);
+numeros.shift(); //se elimina primer elemento
+console.log(numeros);
+numeros.pop(); //se elimina el ultimo
+console.log(numeros);
+
+let numeros_2 = [1,2,3,4,5]
+
+console.log(numeros_2);
+let deleteelement = numeros_2.shift();
+console.log(numeros_2);
+console.log(deleteelement);
+
+console.log(numeros_2);
+let newlenght = numeros_2.push(6) //agregar numero
+console.log(newlenght);
+
+console.log(numeros_2.indexOf(3)); //buscar un numero
+console.log(numeros_2.lastIndexOf(4));
+
+numeros_2.reverse();
+console.log(numeros_2); //invierte el array
+
+console.log(numeros_2.join(' ~ ')); //convierte en string
+
+console.log(numeros_2);
+//numeros_2.splice(2) imprime el array hasta la coordenada indicada
+//numeros_2.splice(2,2,10,23,54) elimina desde esa posicion el numero de valores que indiquemos y en esa grieta puede añadir numeros
+console.log(numeros_2);
+
+let newnumbers = numeros_2.slice(0,4)
+console.log(numeros_2)
+console.log(newnumbers)
+    </script>
+</body>
+</html>
