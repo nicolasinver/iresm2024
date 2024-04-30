@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: 'juan',
+            age: 26,
+            sons:['laura','diego']
+        }
+        console.log(person.name)
+        console.log(person.age)
+        console.log(person.sons[0])
+        console.log(person.sons[1])
+
+        for(const key in person){
+            console.log(key); //para saber el nombre de las variables(recorre key por key)
+        }
+
+        for(const key in person){
+        console.log(person[key]); //para saber que hay en las variables
+        }
+
+        console.log(typeof person); //si es objeto se pueden aplicar estos casos
+
+        for(const son in person.sons){
+            console.log(son);
+        }
+
+        console.log(`hola ${person.name}. tienes ${person.age} años, y tus hijos son ${person.sons.join(', ')}`)
+    
+
+
+
+        
+    </script>
+</body>
+</html>
